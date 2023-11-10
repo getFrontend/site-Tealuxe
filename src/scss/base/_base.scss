@@ -3,12 +3,12 @@ body {
   position: relative;
   overflow-x: hidden;
   padding: 0;
-  min-width: 320px;
+  min-width: 360px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
-  background-color: var(--page-bg);
+  background-color: var(--color-bg);
   color: var(--text-color-dark);
 
   font-family: var(--font-main);

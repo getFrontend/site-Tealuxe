@@ -1,0 +1,44 @@
+.container {
+  // max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+
+  // .container-right {
+  //   /* overflow-x: hidden; */
+  //   padding-left: calc(
+  //     (100% - var(--container-width)) / 2 + var(--container-padding)
+  //   );
+  
+  //   @media (max-width: var(--laptop-size)) {
+  //     padding-left: var(--container-padding);
+  //   }
+  // }
+  
+  // .container-left {
+  //   /* overflow-x: hidden; */
+  //   padding-right: calc(
+  //     (100% - var(--container-width)) / 2 + var(--container-padding)
+  //   );
+  
+  //   @media (max-width: var(--laptop-size)) {
+  //     padding-right: var(--container-padding);
+  //   }
+  // }
+
+  @include mediaMobileXS {
+		--container-padding: 16px;
+	}
+
+  @include mediaMobile {
+    --container-padding: 30px;
+    max-width: calc(624px + var(--container-padding)*2);
+  }
+
+  @include mediaTablet {
+    max-width: calc(942px + var(--container-padding)*2);
+  }
+
+  @include mediaLaptop {
+    max-width: calc(1260px + var(--container-padding)*2);
+  }
+}
