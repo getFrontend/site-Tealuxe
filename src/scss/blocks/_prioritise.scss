@@ -1,0 +1,49 @@
+.prioritise {
+  padding-top: 50px;
+  padding-bottom: 75px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &_subtitle {
+    font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__item {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%;
+  }
+
+  &__img {
+  }
+}
+.container {
+}
+.title-4 {
+}
