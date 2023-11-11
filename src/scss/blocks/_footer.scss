@@ -1,6 +1,146 @@
 .footer {
-  padding-block: 30px;
-  background-color: #0B3142;
-  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background: var(--color-bg-footer);
+  color: var(--color-black);
   text-align: center;
+
+  &__container {}
+
+  &__nav {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 73px;
+    text-align: left;
+  }
+
+  &__quote {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+
+  &__quote-text {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__quote-author {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__contacts {
+    margin-bottom: 40px;
+    display: grid;
+    gap: 10px;
+  }
+
+  &__contacts-desc {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__contacts-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+  }
+
+  &__logo {}
+
+  &__logo-img {
+    width: 57px;
+    height: 91px;
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  &__contacts-item {}
+
+  &__contacts-link {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__social {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__social-icon {
+    display: block;
+
+  }
+
+  &__copyright {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__payment-item {}
+}
+
+.container {}
+
+.nav {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+
+    &:nth-child(1) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__link {
+
+    &:hover {
+      color: var(--color-brown);
+    }
+  }
+}
+
+.title-4 {
+  font-family: var(--font-title);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }
