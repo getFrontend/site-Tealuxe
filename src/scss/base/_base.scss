@@ -34,3 +34,14 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+
+.button {
+  padding: 12px 41px;
+  border: 1px solid var(--color-black);
+  background-color: var(--color-white);
+
+  &:active,
+  &:hover {
+    background-color: var(--color-light-green);
+  }
+}
