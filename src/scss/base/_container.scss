@@ -26,19 +26,19 @@
   // }
 
   @include mediaMobileXS {
-		--container-padding: 16px;
+		max-width: calc(460px + var(--container-padding)*2);
 	}
 
   @include mediaMobile {
-    --container-padding: 30px;
-    max-width: calc(624px + var(--container-padding)*2);
+    max-width: calc(640px + var(--container-padding)*2);
   }
 
   @include mediaTablet {
-    max-width: calc(942px + var(--container-padding)*2);
+    --container-padding: 20px;
+    max-width: calc(960px + var(--container-padding)*2);
   }
 
   @include mediaLaptop {
-    max-width: calc(1260px + var(--container-padding)*2);
+    max-width: calc(1200px + var(--container-padding)*2);
   }
 }
