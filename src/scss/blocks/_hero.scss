@@ -5,6 +5,10 @@
   color: var(--color-white);
   background: url(../../img/hero.png) left / cover no-repeat;
 
+  @include mediaMobileXS {
+    height: 500px;
+  }
+
   &::before {
     content: '';
     width: 100%;
@@ -16,16 +20,48 @@
   &__container {
     height: 100%;
     display: flex;
+    padding-inline: 10px;
+
+    @include mediaMobile {
+      margin: 0;
+      padding-inline: 20px;
+    }
+
+    @include mediaLaptop {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   }
-  
+
   &__content {
     z-index: 10;
     margin-bottom: 30px;
     align-self: flex-end;
+
+    @include mediaMobileXS {
+      margin-bottom: 48px;
+    }
+
+    @include mediaMobile {
+      max-width: 684px;
+    }
+
+    @include mediaTablet {
+      max-width: 790px;
+    }
   }
 
   &__title {
     margin-bottom: 10px;
+
+    @include mediaMobileXS {
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+
+    @include mediaMobile {
+      font-size: 60px;
+    }
   }
 
   &__slogan {
@@ -33,5 +69,14 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    @include mediaMobileXS {
+      font-family: var(--font-title);
+      font-size: 22px;
+    }
+
+    @include mediaMobile {
+      max-width: 558px;
+    }
   }
 }
