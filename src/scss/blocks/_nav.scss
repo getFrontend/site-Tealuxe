@@ -1,0 +1,22 @@
+.nav {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+
+    &:nth-child(1) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__link {
+
+    &:hover {
+      color: var(--color-brown);
+    }
+  }
+}
