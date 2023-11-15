@@ -7,6 +7,15 @@
 
   @include mediaMobileXS {
     height: 500px;
+    margin-bottom: 60px;
+  }
+
+  @include mediaMobile {
+    margin-bottom: 120px;
+  }
+
+  @include mediaLaptop {
+    margin-bottom: 150px;
   }
 
   &::before {
