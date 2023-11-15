@@ -3,16 +3,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  @include mediaMobileXS {
+    margin-bottom: 60px; 
+    gap: 30px;
+  }
+  
+  @include mediaMobile {
+    margin-bottom: 120px;
+    padding-inline: 20px;
+    gap: 40px;
+  }
+
+  @include mediaLaptop {
+    margin-bottom: 150px;
+  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    @include mediaMobile {
+      column-gap: 6px;
+    }
+
+    @include mediaTablet {
+      gap: 0;
+    }
+
+    @include mediaLaptop {
+      gap: 40px;
+    }
   }
 
   &__item {
     flex-basis: 180px;
+    display: grid;
+    gap: 10px;
   }
 
   &__item-title {
