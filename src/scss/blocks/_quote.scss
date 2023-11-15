@@ -1,0 +1,56 @@
+.quote {
+  margin: 0 auto 80px auto;
+  max-width: 340px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+
+  @include mediaMobileXS {
+    max-width: 376px;
+    margin-bottom: 60px;
+  }
+
+  @include mediaMobile {
+    margin-bottom: 120px;
+    padding-inline: 20px;
+    max-width: 680px;
+    font-size: 39px;
+    font-family: var(--font-title);
+  }
+
+  @include mediaTablet {
+    max-width: 744px;
+  }
+
+  @include mediaLaptop {
+    margin-bottom: 135px;
+  }
+
+  &_accent {
+    // opacity: 0.5;
+    position: relative;
+    background-color: var(--color-bg-light);
+
+    // &::before {
+    //   content: '';
+    //   display: none;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   z-index: -10;
+    //   width: 273px;
+    //   height: 61px;
+    //   background-color: var(--color-bg-light);
+
+    //   @include mediaMobile {
+    //     display: block;
+    //   }
+    // }
+
+    // @include mediaMobile {
+    //   background-color: transparent;
+    // }
+  }
+}
