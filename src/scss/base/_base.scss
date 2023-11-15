@@ -33,6 +33,18 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @include mediaMobileXS {
+    font-size: 40px;
+  }
+}
+
+.title-2 {
+  font-family: var(--font-title);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .button {
